@@ -1,6 +1,7 @@
 import '../flutter_flow/flutter_flow_theme.dart';
 import '../flutter_flow/flutter_flow_util.dart';
 import '../flutter_flow/flutter_flow_widgets.dart';
+import '../setup_1/setup1_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
@@ -41,7 +42,7 @@ class _WelcomeWidgetState extends State<WelcomeWidget> {
                             width: 100,
                             height: 100,
                             decoration: BoxDecoration(
-                              color: Color(0xFF4B39EF),
+                              color: Color(0xFF23C562),
                             ),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
@@ -55,7 +56,7 @@ class _WelcomeWidgetState extends State<WelcomeWidget> {
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0, 0, 0, 20),
                                       child: Image.asset(
-                                        'assets/images/ON_explore@3x.png',
+                                        'assets/images/pre-made-scene-01.png',
                                         width: 350,
                                         height: 400,
                                         fit: BoxFit.fitWidth,
@@ -70,14 +71,15 @@ class _WelcomeWidgetState extends State<WelcomeWidget> {
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
                                       Text(
-                                        'Explore your City',
+                                        'Parity',
                                         style: FlutterFlowTheme.of(context)
                                             .title1
                                             .override(
-                                              fontFamily: 'Lexend Deca',
+                                              fontFamily: 'Aeonik',
                                               color: Colors.white,
                                               fontSize: 32,
                                               fontWeight: FontWeight.bold,
+                                              useGoogleFonts: false,
                                             ),
                                       ),
                                     ],
@@ -91,14 +93,15 @@ class _WelcomeWidgetState extends State<WelcomeWidget> {
                                     children: [
                                       Expanded(
                                         child: Text(
-                                          'Find hidden Gems around your city, by exploring the curated lists of others.',
+                                          'Putting your community and trading in one place.',
                                           style: FlutterFlowTheme.of(context)
                                               .subtitle2
                                               .override(
-                                                fontFamily: 'Lexend Deca',
+                                                fontFamily: 'Aeonik',
                                                 color: Color(0x99FFFFFF),
                                                 fontSize: 16,
                                                 fontWeight: FontWeight.w500,
+                                                useGoogleFonts: false,
                                               ),
                                         ),
                                       ),
@@ -115,23 +118,30 @@ class _WelcomeWidgetState extends State<WelcomeWidget> {
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             0, 16, 0, 0),
                                         child: FFButtonWidget(
-                                          onPressed: () {
-                                            print('Button pressed ...');
+                                          onPressed: () async {
+                                            await Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                builder: (context) =>
+                                                    Setup1Widget(),
+                                              ),
+                                            );
                                           },
-                                          text: 'Explore Now',
+                                          text: 'Get Started',
                                           options: FFButtonOptions(
                                             width: 170,
                                             height: 50,
-                                            color: Color(0xFF39D2C0),
+                                            color: Colors.white,
                                             textStyle:
                                                 FlutterFlowTheme.of(context)
                                                     .subtitle2
                                                     .override(
-                                                      fontFamily: 'Lexend Deca',
-                                                      color: Colors.white,
+                                                      fontFamily: 'Aeonik',
+                                                      color: Color(0xFF23C562),
                                                       fontSize: 16,
                                                       fontWeight:
                                                           FontWeight.w500,
+                                                      useGoogleFonts: false,
                                                     ),
                                             elevation: 2,
                                             borderSide: BorderSide(
@@ -166,7 +176,7 @@ class _WelcomeWidgetState extends State<WelcomeWidget> {
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0, 0, 0, 20),
                                       child: Image.asset(
-                                        'assets/images/ON_messages@3x.png',
+                                        'assets/images/NFT_App.png',
                                         width: 350,
                                         height: 400,
                                         fit: BoxFit.fitWidth,
@@ -181,14 +191,15 @@ class _WelcomeWidgetState extends State<WelcomeWidget> {
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
                                       Text(
-                                        'Message Friends',
+                                        'Community',
                                         style: FlutterFlowTheme.of(context)
                                             .title1
                                             .override(
-                                              fontFamily: 'Lexend Deca',
+                                              fontFamily: 'Aeonik',
                                               color: Colors.white,
                                               fontSize: 32,
                                               fontWeight: FontWeight.bold,
+                                              useGoogleFonts: false,
                                             ),
                                       ),
                                     ],
@@ -202,14 +213,15 @@ class _WelcomeWidgetState extends State<WelcomeWidget> {
                                     children: [
                                       Expanded(
                                         child: Text(
-                                          'Stay in the loop with trip plans, places to go and transportation.',
+                                          'Chat with community members, post trading ideas and share trading results.',
                                           style: FlutterFlowTheme.of(context)
                                               .subtitle2
                                               .override(
-                                                fontFamily: 'Lexend Deca',
+                                                fontFamily: 'Aeonik',
                                                 color: Color(0x99FFFFFF),
                                                 fontSize: 16,
                                                 fontWeight: FontWeight.w500,
+                                                useGoogleFonts: false,
                                               ),
                                         ),
                                       ),
@@ -226,24 +238,32 @@ class _WelcomeWidgetState extends State<WelcomeWidget> {
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             0, 16, 0, 0),
                                         child: FFButtonWidget(
-                                          onPressed: () {
-                                            print('Button pressed ...');
+                                          onPressed: () async {
+                                            await Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                builder: (context) =>
+                                                    Setup1Widget(),
+                                              ),
+                                            );
                                           },
-                                          text: 'Explore Now',
+                                          text: 'Get Started',
                                           options: FFButtonOptions(
                                             width: 170,
                                             height: 50,
                                             color: Colors.white,
-                                            textStyle:
-                                                FlutterFlowTheme.of(context)
-                                                    .subtitle2
-                                                    .override(
-                                                      fontFamily: 'Lexend Deca',
-                                                      color: Color(0xFF39D2C0),
-                                                      fontSize: 16,
-                                                      fontWeight:
-                                                          FontWeight.w500,
-                                                    ),
+                                            textStyle: FlutterFlowTheme.of(
+                                                    context)
+                                                .subtitle2
+                                                .override(
+                                                  fontFamily: 'Aeonik',
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .primaryColor,
+                                                  fontSize: 16,
+                                                  fontWeight: FontWeight.w500,
+                                                  useGoogleFonts: false,
+                                                ),
                                             elevation: 2,
                                             borderSide: BorderSide(
                                               color: Colors.transparent,
@@ -277,7 +297,7 @@ class _WelcomeWidgetState extends State<WelcomeWidget> {
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0, 0, 0, 30),
                                       child: Image.asset(
-                                        'assets/images/ON_expenses@3x.png',
+                                        'assets/images/pre-made-scene-09.png',
                                         width: 350,
                                         height: 400,
                                         fit: BoxFit.fitWidth,
@@ -292,14 +312,15 @@ class _WelcomeWidgetState extends State<WelcomeWidget> {
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
                                       Text(
-                                        'Track Expenses',
+                                        'No Fee Trading',
                                         style: FlutterFlowTheme.of(context)
                                             .title1
                                             .override(
-                                              fontFamily: 'Lexend Deca',
+                                              fontFamily: 'Aeonik',
                                               color: Color(0xFF151B1E),
                                               fontSize: 32,
                                               fontWeight: FontWeight.bold,
+                                              useGoogleFonts: false,
                                             ),
                                       ),
                                     ],
@@ -313,14 +334,15 @@ class _WelcomeWidgetState extends State<WelcomeWidget> {
                                     children: [
                                       Expanded(
                                         child: Text(
-                                          'Don’t overspend on your trip, track all your expenses within the application.',
+                                          'Trade directly in the app using Parity\'s no-fee trading support 20+ major coins.',
                                           style: FlutterFlowTheme.of(context)
                                               .subtitle2
                                               .override(
-                                                fontFamily: 'Lexend Deca',
+                                                fontFamily: 'Aeonik',
                                                 color: Color(0xFF82878C),
                                                 fontSize: 16,
                                                 fontWeight: FontWeight.normal,
+                                                useGoogleFonts: false,
                                               ),
                                         ),
                                       ),
@@ -337,23 +359,30 @@ class _WelcomeWidgetState extends State<WelcomeWidget> {
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             0, 16, 0, 0),
                                         child: FFButtonWidget(
-                                          onPressed: () {
-                                            print('Button pressed ...');
+                                          onPressed: () async {
+                                            await Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                builder: (context) =>
+                                                    Setup1Widget(),
+                                              ),
+                                            );
                                           },
-                                          text: 'Explore Now',
+                                          text: 'Get Started',
                                           options: FFButtonOptions(
                                             width: 170,
                                             height: 50,
-                                            color: Color(0xFF4B39EF),
+                                            color: Color(0xFF23C562),
                                             textStyle:
                                                 FlutterFlowTheme.of(context)
                                                     .subtitle2
                                                     .override(
-                                                      fontFamily: 'Lexend Deca',
+                                                      fontFamily: 'Aeonik',
                                                       color: Colors.white,
                                                       fontSize: 16,
                                                       fontWeight:
                                                           FontWeight.w500,
+                                                      useGoogleFonts: false,
                                                     ),
                                             elevation: 2,
                                             borderSide: BorderSide(
